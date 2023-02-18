@@ -1,20 +1,18 @@
-# include <stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
- *
- * main - Entry point
- *
- * Return - Always 0 (sucess)
+ * main - Prints the alphabet in lowercase followed by a new line
+ * Return: 0 (Success)
  */
 int main(void)
 {
-	char c;
+	int ch = 'a';
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
 	putchar('\n');
 	return (0);
 }
