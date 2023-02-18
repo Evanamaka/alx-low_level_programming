@@ -1,19 +1,17 @@
 #include <stdio.h>
+#include <time.h>
 #include <stdlib.h>
 /**
- * main - prints alphabet in lowercase, followed by a new line except q and e
+ * main - prints single numbers of base 10 from 0 followed by a new line
  * Return: 0 (Success)
  */
 int main(void)
 {
-	char ch = 'a';
+	char ch = '0';
 
-	while (ch <= 'z')
+	while (ch <= '9')
 	{
-		if ((ch != 'e') && (ch != 'q'))
-		{
-			putchar(ch);
-		}
+		putchar(ch);
 		ch++;
 	}
 	putchar('\n');
