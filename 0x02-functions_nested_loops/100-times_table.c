@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - function that prints the n times table
+ * starting with 0
  * @n: parameter function
  * Return: should not print anything if n < 15 of less than 0
  */
@@ -23,7 +24,7 @@ void print_times_table(int n)
 	_putchar(' ');
 	if (prod <= 9)
 	_putchar(' ');
-	if (prod <= 100)
+	if (prod >= 100)
 	{
 	_putchar((prod / 100) + '0');
 	_putchar((prod / 10) % 10 + '0');
